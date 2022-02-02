@@ -5,9 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
-
-import askaquestion.com.app.R;
 import askaquestion.com.app.databinding.ActivityMain2Binding;
 
 public class MainActivity2 extends AppCompatActivity {
@@ -73,14 +70,5 @@ public class MainActivity2 extends AppCompatActivity {
 
             }
         });
-       /* if(e1.length()==1){
-
-        }else if(e2.length()==1){
-            binding.et3.requestFocus();
-        }else if(e3.length()==1){
-            binding.et4.requestFocus();
-        }else{
-            Log.i("TAG", "onCreate: ");
-        }*/
     }
 }
