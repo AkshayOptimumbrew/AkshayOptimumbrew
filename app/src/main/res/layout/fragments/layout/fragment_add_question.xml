@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.fragments.AddQuestionFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/background_border_gold">
+
+                    <RelativeLayout
+                        android:id="@+id/rl1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/signin_signup_edittext_border">
+
+                        <Spinner
+                            android:id="@+id/spinner_Category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="10dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="10dp"
+                            android:foreground="@drawable/button_round_ripple"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/dropdown_icon" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl1"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/text_Question"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:text="QUESTION"
+                            android:textColor="@color/gold"
+                            android:textSize="18sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/rel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true">
+
+                            <ImageView
+                                android:id="@+id/image_Background"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center"
+                                android:background="@drawable/img_border"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/img" />
+
+                            <ImageView
+                                android:id="@+id/image_Camera"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/camera_icon" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/text_Description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rel"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:text="DESCRIPTION"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edit_Description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text_Description"
+                            android:layout_marginBottom="10dp"
+                            android:backgroundTint="#03DAC5"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:maxLength="200"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/text_Count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edit_Description"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/rl4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/background_border_gold">
+
+                    <RelativeLayout
+                        android:id="@+id/rl5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/text_Option"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:text="OPTION"
+                            android:textColor="@color/gold"
+                            android:textSize="18sp" />
+
+                        <RadioGroup
+                            android:id="@+id/radiobutton_Group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/text_Option"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radiobutton_Text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/white"
+                                android:checked="true"
+                                android:fontFamily="@font/sf_atarian_system_extended"
+                                android:text="Text"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <RadioButton
+                                android:id="@+id/radiobutton_Image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/white"
+                                android:fontFamily="@font/sf_atarian_system_extended"
+                                android:text="Image"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </RadioGroup>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl5"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/textLL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:minHeight="120dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/linearlayout_text_option1_view_question"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="3dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/edit_Option1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/sf_atarian_system_extended"
+                                    android:gravity="center"
+                                    android:hint="Enter Option 1\n Maximum 30 \nCharacters"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="3dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/edit_Option2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/sf_atarian_system_extended"
+                                    android:gravity="center"
+                                    android:hint="Enter Option 2\n Maximum 30 \nCharacters"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/imageRL"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <FrameLayout
+                                android:id="@+id/frame_layout_image_option1"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/imageview_option1_view_question"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="120dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/image_1" />
+
+                                <ProgressBar
+                                    android:id="@+id/progressbar_option1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/frame_layout_image_option2"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/imageview_option2_view_question"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="120dp"
+                                    android:gravity="center"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/image_2" />
+
+                                <ProgressBar
+                                    android:id="@+id/progressbar_option2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageOr"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_or" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/rl6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/background_border_gold">
+
+                    <TextView
+                        android:id="@+id/text_Preference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/sf_atarian_system_extended"
+                        android:text="PREFERENCES"
+                        android:textColor="@color/gold"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_Preference"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/rl8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/text_SetCountry"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sf_atarian_system_extended"
+                                android:text="SET COUNTRY"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/image_SelectCountry"
+                                android:layout_width="40dp"
+                                android:layout_height="18dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                style="@style/selectableItemBackgroundBorderlessWhite"
+                                android:padding="3dp"
+                                android:src="@drawable/dropdown_icon" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/viewWhiteLineOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_below="@+id/rl8"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/text_NoteOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/viewWhiteLineOne"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:text="NOTE : Your Question Will Be Visible At Only Selected Location"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:id="@+id/viewWhiteLineTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_below="@+id/text_NoteOne"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/white" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/viewWhiteLineTwo"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/signin_signup_edittext_border">
+
+                            <Spinner
+                                android:id="@+id/spinner_Gender"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/dropdown_icon" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/text_NoteTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl9"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:text="NOTE : Your Question Will Be Visible At Only Selected Gender"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <Button
+                    android:id="@+id/button_Preview"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_btn"
+                    android:fontFamily="@font/sf_atarian_system_extended"
+                    android:gravity="center|center_horizontal"
+                    android:text="PREVIEW"
+                    android:foreground="@drawable/button_ripple"
+                    android:textColor="#1B3C4D"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/button_Submit"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_btn"
+                    android:fontFamily="@font/sf_atarian_system_extended"
+                    android:gravity="center|center_horizontal"
+                    android:text="SUBMIT"
+                    android:foreground="@drawable/button_ripple"
+                    android:textColor="#1B3C4D"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

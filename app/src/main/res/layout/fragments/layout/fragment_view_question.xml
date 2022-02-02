@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.fragments.ViewQuestionFragment">
+
+    <TextView
+        android:id="@+id/text_NoQuestionFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/sf_atarian_system_extended"
+        android:text="Empty!!!"
+        android:visibility="gone"
+        android:textColor="@color/gold"
+        android:textSize="22sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_ReportIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:foreground="@drawable/button_round_ripple"
+            android:src="@drawable/ic_report_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/image_Coins"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_coins" />
+
+            <TextView
+                android:id="@+id/text_TotalCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imgCoins"
+                android:fontFamily="@font/sf_atarian_system_extended"
+                android:text="220"
+                android:textColor="@color/gold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_Skip"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/sf_atarian_system_extended"
+            android:text="Skip >"
+            android:textColor="@color/gold"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_Description"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/image_Question"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:src="#424242" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rlWithImageAndText"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/sf_atarian_system_extended"
+        android:text="ABC"
+        android:textColor="@color/gold"
+        android:textSize="22dp"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/rlWithImageAndText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:id="@+id/textLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gold"
+            android:minHeight="120dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearlayout_text_option1_view_question"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@color/gold"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/edit_Option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/sf_atarian_system_extended"
+                    android:gravity="center"
+                    android:hint="Ask Question App"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/gold"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/edit_Option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/sf_atarian_system_extended"
+                    android:gravity="center"
+                    android:hint="Ask Question App"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/imageRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/frame_layout_image_option1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image_option1_view_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image_1" />
+
+                <ProgressBar
+                    android:id="@+id/progressbar_option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_layout_image_option2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image_option2_view_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image_2" />
+
+                <ProgressBar
+                    android:id="@+id/progressbar_option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageOr"
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_or" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_Refresh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_refresh"
+        android:visibility="gone" />
+</RelativeLayout>

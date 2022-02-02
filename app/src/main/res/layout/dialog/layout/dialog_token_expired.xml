@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    android:padding="16dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_cross"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/fortoken"
+        android:src="@drawable/ic_baseline_close_24"/>
+    <TextView
+        android:id="@+id/text_Oops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_atarian_system_extended"
+        android:text="Oops.."
+        android:textColor="@color/gold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/image_cross"
+        android:textSize="35dp" />
+    <TextView
+        android:id="@+id/token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_atarian_system_extended"
+        android:text="Token Was Expired!!"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_Oops"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_Click"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/token"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:foreground="@drawable/button_ripple"
+        android:background="@drawable/login_btn"
+        android:fontFamily="@font/sf_atarian_system_extended"
+        android:gravity="center|center_horizontal"
+        android:text="Click.."
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.fragments.SettingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/image_Logout"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:foreground="@drawable/button_round_ripple"
+                    android:backgroundTint="@color/gold"
+                    android:background="@drawable/ic_icon_logout_3" />
+
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_Preference"
+                    android:layout_marginTop="-15dp"
+                    android:background="@drawable/background_border_gold"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/sf_atarian_system_extended"
+                        android:text="CATEGORY"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/signin_signup_edittext_border">
+
+                        <Spinner
+                            android:id="@+id/spinner_Category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null" />
+
+                        <ImageView
+                            android:id="@+id/image_Categories"
+                            android:layout_width="20dp"
+                            android:layout_height="10dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/dropdown_icon" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_Preference"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image_Logout"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/gold"
+                    android:fontFamily="@font/sf_atarian_system_extended"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="50dp"
+                    android:paddingBottom="10dp"
+                    android:text="PREFERENCES"
+                    android:textColor="#20475B"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_GetMoreCoin"
+                    android:layout_marginTop="-20dp"
+                    android:background="@drawable/background_border_gold"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:text="AVAILABLE COINS"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                        <ImageButton
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_icon_small_dollrer1"/>
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/sf_atarian_system_extended"
+                        android:text="PURCHASE COINS"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:fontFamily="@font/sf_atarian_system_extended"
+                                android:text="BUY"
+                                android:textColor="@color/black" />
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/doller_icon" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:background="@color/white" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="@font/sf_atarian_system_extended"
+                                android:gravity="center"
+                                android:text="150 COINS"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="5dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:fontFamily="@font/sf_atarian_system_extended"
+                                android:text="BUY"
+                                android:textColor="@color/black" />
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/doller_icon" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:background="@color/white" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="@font/sf_atarian_system_extended"
+                                android:gravity="center"
+                                android:text="150 COINS"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="5dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:fontFamily="@font/sf_atarian_system_extended"
+                                android:text="BUY"
+                                android:textColor="@color/black" />
+
+                            <Button
+                                android:id="@+id/button_ViewVideo"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/view_video_icon"
+                                android:fontFamily="@font/sf_atarian_system_extended"
+                                android:text=" VIEW \n VIDEO "
+                                android:textColor="@color/white" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:background="@color/white" />
+
+                            <TextView
+                                android:id="@+id/text_VideoAdsCoin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:text="0 COINS"
+                                android:fontFamily="@font/sf_atarian_system_extended"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_GetMoreCoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/gold"
+                    android:fontFamily="@font/sf_atarian_system_extended"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="50dp"
+                    android:paddingBottom="10dp"
+                    android:text="GET MORE COIN"
+                    android:textColor="#20475B"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/l3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_EditProfile"
+                    android:layout_marginTop="-15dp"
+                    android:background="@drawable/background_border_gold"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/image_Profile"
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            android:foreground="@drawable/button_round_ripple"
+                            android:layout_gravity="center"
+                            android:src="@drawable/profile_avatar" />
+
+                        <ProgressBar
+                            android:id="@+id/progress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_centerInParent="true" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/sf_atarian_system_extended"
+                        android:gravity="center"
+                        android:text="FULL NAME"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/edit_FullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/signin_signup_edittext_border"
+                        android:fontFamily="@font/sf_atarian_system_extended"
+                        android:inputType="textEmailAddress"
+                        android:padding="7dp" />
+
+                    <Button
+                        android:id="@+id/button_Save"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/login_btn"
+                        android:fontFamily="@font/sf_atarian_system_extended"
+                        android:text="SAVE"
+                        android:gravity="center"
+                        android:textColor="#1B3C4D"
+                        android:foreground="@drawable/button_ripple"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_EditProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/gold"
+                    android:fontFamily="@font/sf_atarian_system_extended"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="50dp"
+                    android:paddingBottom="10dp"
+                    android:text="EDIT PROFILE"
+                    android:textColor="#20475B"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/l4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_ChangePassword"
+                    android:layout_marginTop="-15dp"
+                    android:background="@drawable/background_border_gold"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/sf_atarian_system_extended"
+                        android:gravity="center"
+                        android:text="USER NAME"
+                        android:textColor="@color/gold"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        style="@style/Textview_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OLD PASSWORD" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edit_OldPassword"
+                            style="@style/Edittext_Style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/signin_signup_edittext_border"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:inputType="textPassword"
+                            android:padding="7dp" />
+
+                        <ImageButton
+                            android:id="@+id/image_show_pass_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_baseline_remove_red_eye_24" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        style="@style/Textview_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NEW PASSWORD" />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edit_NewPassword"
+                            style="@style/Edittext_Style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/signin_signup_edittext_border"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:inputType="textPassword"
+                            android:padding="7dp" />
+
+                        <ImageButton
+                            android:id="@+id/image_show_pass_btn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_baseline_remove_red_eye_24" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        style="@style/Textview_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CONFIRM NEW PASSWORD" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edit_ConfirmNewPassword"
+                            style="@style/Edittext_Style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/signin_signup_edittext_border"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:inputType="textPassword"
+                            android:padding="7dp" />
+
+                        <ImageButton
+                            android:id="@+id/image_show_pass_btn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_baseline_remove_red_eye_24" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/button_Submit"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/login_btn"
+                        android:fontFamily="@font/sf_atarian_system_extended"
+                        android:text="SUBMIT"
+                        android:foreground="@drawable/button_ripple"
+                        android:textColor="#1B3C4D"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_ChangePassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/gold"
+                    android:fontFamily="@font/sf_atarian_system_extended"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="50dp"
+                    android:paddingBottom="10dp"
+                    android:text="CHANGE PASSWORD"
+                    android:textColor="#20475B"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp">
+
+                <RelativeLayout
+                    android:id="@+id/l5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_Others"
+                    android:layout_marginTop="-15dp"
+                    android:background="@drawable/background_border_gold"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/button_Rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="40dp"
+                            android:foreground="@drawable/button_ripple"
+                            android:layout_marginRight="40dp"
+                            android:background="@drawable/rattings_btn"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/text_Rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"
+                            android:foreground="@drawable/button_ripple"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:text="RATING"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@+id/text_Rating"
+                            android:src="@drawable/ic_rating_icon_star" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl1">
+
+                        <ImageButton
+                            android:id="@+id/button_Privacy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:foreground="@drawable/button_ripple"
+                            android:background="@drawable/rattings_btn"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/text_Privacy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="15dp"
+                            android:foreground="@drawable/button_ripple"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:text="PRIVACY &amp; POLICY"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@id/text_Privacy"
+                            android:src="@drawable/ic_icon_privacy_policy" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl2">
+
+                        <ImageView
+                            android:id="@+id/button_Terms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:scaleType="fitXY"
+                            android:background="@drawable/rattings_btn"
+                            android:foreground="@drawable/button_ripple"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/text_Terms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:text="TERMS &amp; CONDITION"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@id/text_Terms"
+                            android:src="@drawable/ic_icon_terms" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_Others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/gold"
+                    android:fontFamily="@font/sf_atarian_system_extended"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="50dp"
+                    android:paddingBottom="10dp"
+                    android:text="OTHERS"
+                    android:textColor="#20475B"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

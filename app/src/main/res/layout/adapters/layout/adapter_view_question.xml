@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_NoQuestionFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_atarian_system_extended"
+        android:text="No Question Found!!!!"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textColor="@color/gold"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_border_gold"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ask Question App"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/sf_atarian_system_extended"/>
+        <Button
+            android:id="@+id/button_ViewQuestion"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:foreground="@drawable/button_ripple"
+            android:background="@drawable/login_btn"
+            android:fontFamily="@font/sf_atarian_system_extended"
+            android:gravity="center|center_horizontal"
+            android:text="VIEW QUESTION"
+            android:textColor="#1B3C4D"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_ViewAnalysis"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:foreground="@drawable/button_ripple"
+            android:background="@drawable/login_btn"
+            android:fontFamily="@font/sf_atarian_system_extended"
+            android:gravity="center|center_horizontal"
+            android:text="VIEW ANALYSIS"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#1B3C4D"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

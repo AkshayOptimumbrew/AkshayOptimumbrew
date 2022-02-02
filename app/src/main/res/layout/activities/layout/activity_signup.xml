@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".ui.activity.SignupActivity">
+
+    <ImageView
+        android:id="@+id/image_Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:foreground="@drawable/button_round_ripple"
+        android:src="@drawable/ic_back_arrow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image_Profile"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_gravity="center"
+                        android:foreground="@drawable/button_round_ripple"
+                        android:src="@drawable/profile_avatar" />
+
+                    <ProgressBar
+                        android:id="@+id/progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/background_border_gold"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end" />
+                    <TextView
+                        style="@style/Textview_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NAME" />
+
+                    <EditText
+                        android:id="@+id/edit_Name"
+                        style="@style/Edittext_Style"
+                        android:inputType="textPersonName"
+                        android:maxLength="50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/signin_signup_edittext_border"
+                        android:fontFamily="@font/sf_atarian_system_extended" />
+
+                    <TextView
+                        style="@style/Textview_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EMAIL" />
+
+                    <EditText
+                        android:id="@+id/edit_Email"
+                        style="@style/Edittext_Style"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/signin_signup_edittext_border"
+                        android:fontFamily="@font/sf_atarian_system_extended" />
+
+                    <TextView
+                        style="@style/Textview_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PASSWORD" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edit_Password"
+                            style="@style/Edittext_Style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLength="20"
+                            android:background="@drawable/signin_signup_edittext_border"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:inputType="textPassword"
+                            android:padding="7dp" />
+
+                        <ImageButton
+                            android:id="@+id/image_show_pass_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_baseline_remove_red_eye_24" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        style="@style/Textview_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CONFIRM PASSWORD" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edit_ConfirmPassword"
+                            style="@style/Edittext_Style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLength="20"
+                            android:background="@drawable/signin_signup_edittext_border"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:inputType="textPassword"
+                            android:padding="7dp" />
+                        <ImageButton
+                            android:id="@+id/image_show_pass_btn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_baseline_remove_red_eye_24"
+                            android:background="@android:color/transparent"/>
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        style="@style/Textview_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="COUNTRY" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp">
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dropdown"
+                            android:background="@drawable/signin_signup_edittext_border"
+                            android:entries="@array/country_arrays" />
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/dropdown_icon"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/sf_atarian_system_extended"
+                            android:text="GENDER"
+                            android:textColor="@color/gold"
+                            android:textSize="14sp" />
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radiobutton_Male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/white"
+                                android:fontFamily="@font/sf_atarian_system_extended"
+                                android:text="MALE"
+                                android:textColor="@color/gold"
+                                android:textSize="12sp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <RadioButton
+                                android:id="@+id/radiobutton_Female"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/white"
+                                android:fontFamily="@font/sf_atarian_system_extended"
+                                android:text="FEMALE"
+                                android:textColor="@color/gold"
+                                android:textSize="12sp" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/buttonSignup"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:text="SIGNUP"
+                        android:gravity="center"
+                        android:background="@drawable/login_btn"
+                        android:fontFamily="@font/sf_atarian_system_extended"
+                        android:textColor="@color/white"
+                        android:foreground="@drawable/button_ripple"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/dialog_border"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:src="@drawable/ask_question_logo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:fontFamily="@font/sf_atarian_system_extended"
+        android:text="How Was Your Experience With Us?"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:theme="@style/RatingBar2" />
+    <TextView
+        android:id="@+id/text_Notnow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/sf_atarian_system_extended"
+        android:text="Not Now"
+        android:padding="3dp"
+        style="@style/selectableItemBackgroundBorderlessBlack"
+        android:layout_gravity="center"
+        android:textColor="@color/gold"
+        android:textSize="18sp" />
+
+
+
+</LinearLayout>

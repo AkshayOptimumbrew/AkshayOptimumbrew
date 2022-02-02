@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_atarian_system_extended"
+        android:text="Are You Sure ?"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_Camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sf_atarian_system_extended"
+        android:text="You Want To Update Your Profile ? "
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/text_No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sf_atarian_system_extended"
+            android:text="No"
+            android:padding="3dp"
+            style="@style/selectableItemBackgroundBorderlessBlack"
+            android:textColor="@color/gold"
+            android:textSize="18sp" />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/text_Yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sf_atarian_system_extended"
+            android:text="Yes"
+            android:padding="3dp"
+            style="@style/selectableItemBackgroundBorderlessBlack"
+            android:textColor="@color/gold"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

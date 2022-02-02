@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.activity.SigninActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/button_Facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:foreground="@drawable/button_ripple"
+                    android:background="#0042EA"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Facebook"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_toRightOf="@+id/img"
+                        android:fontFamily="@font/sf_atarian_system_extended_bold"/>
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/fb_logo"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/button_Google"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="#C65556"
+                    android:foreground="@drawable/button_ripple"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Google"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_toRightOf="@+id/img1"
+                        android:fontFamily="@font/sf_atarian_system_extended_bold"/>
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/logo_google"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/background_border_gold"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_Email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/sf_atarian_system_extended"
+                        android:text="EMAIL"
+                        android:textColor="@color/gold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/text_Email"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_email_24" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/edit_Email"
+                    style="@style/Edittext_Style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/signin_signup_edittext_border"
+                    android:fontFamily="@font/sf_atarian_system_extended"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_Password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/sf_atarian_system_extended"
+                        android:text="PASSWORD"
+                        android:textColor="@color/gold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/text_Password"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_key_24" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/editPassword"
+                        style="@style/Edittext_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/signin_signup_edittext_border"
+                        android:fontFamily="@font/sf_atarian_system_extended"
+                        android:inputType="textPassword"
+                        android:maxLength="30"
+                        android:padding="7dp" />
+
+                    <ImageButton
+                        android:id="@+id/image_show_pass_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_baseline_remove_red_eye_24" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_ForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    style="@style/selectableItemBackgroundWhite"
+                    android:padding="3dp"
+                    android:fontFamily="@font/sf_atarian_system_extended"
+                    android:text="FORGOT PASSWORD ?"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button_Login"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/login_btn"
+                    android:fontFamily="@font/sf_atarian_system_extended"
+                    android:gravity="center"
+                    android:foreground="@drawable/button_ripple"
+                    android:text="LOGIN"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/sf_atarian_system_extended"
+                android:text="SIGNUP"
+                android:padding="3dp"
+                style="@style/selectableItemBackgroundWhite"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
