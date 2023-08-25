@@ -2,8 +2,8 @@ package askaquestion.com.app.core.constants;
 
 public class ConstantsAPI {
 
-    private static final String BASE_URL = "http://192.168.0.106/ask_question_poll/api/public/api/";
-    private static final String BASE_URL2 = "http://192.168.0.104/ask_question_poll/api/public/api/";
+    private static final String BASE_URL = "http://192.168.0.108/ask_question_poll/api/public/api/";
+    private static final String BASE_URL2 = "http://192.168.0.108/ask_question_poll/api/public/api/";
 
     /*API NAME*/
 
